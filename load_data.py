@@ -16,8 +16,6 @@ import json
 #   Notes can also be attached to assignments. The goal of the system is to offer rigidity in scheduling whilst
 #   also aiding the user in completion of the work.
 
-with open("data.json") as file:
+with open("data.json", mode="r", encoding="utf-8") as file:
 
     data: dict[str, list or dict] = json.load(file)
-
-print(type(data))
